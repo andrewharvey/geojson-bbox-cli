@@ -1,0 +1,24 @@
+{
+  "name": "geojson-bbox-cli",
+  "version": "1.0.0",
+  "description": "Add a bbox property to a GeoJSON file",
+  "main": "index.js",
+  "license": "ISC",
+  "bin": {
+    "geojson-bbox": "geojson-bbox"
+  },
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "author": "Andrew Harvey <andrew@alantgeo.com.au>",
+  "dependencies": {
+    "@turf/bbox": "^6.0.1",
+    "geojson-stream": "^0.0.1",
+    "minimist": "^1.2.0",
+    "stream-combiner": "^0.2.2",
+    "through": "^2.3.8"
+  },
+  "devDependencies": {
+    "tap": "^11.0.0"
+  }
+}

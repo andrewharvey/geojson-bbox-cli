@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var bbox = require('./');
+var argv = require('minimist')(process.argv.slice(2));
+
+process.stdin
+    .pipe(bbox({replace: false}))
+    .pipe(process.stdout);
